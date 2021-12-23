@@ -5,9 +5,9 @@ on:
       - master
     paths:
       - '**.go'
-  jobs:
-    publish:
-    if: github.event.pull_request.merged == true
+  # jobs:
+  #   publish:
+  #   if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     # env:
     #   # FUNCTION_NAME: '${{ secrets.FUNCTION_NAME }}'

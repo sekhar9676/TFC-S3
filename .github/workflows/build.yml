@@ -1,12 +1,12 @@
 name: Build and Upload to S3
-'on':
+on:
   push:
     branches:
       - main
     paths:
       - '**.go'
-jobs:
-  publish:
+  jobs:
+    publish:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     # env:

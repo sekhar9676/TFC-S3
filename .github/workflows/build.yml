@@ -6,8 +6,7 @@ on:
     paths:
       - '**.go'
   jobs:
-    print-tag:
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     # env:
     #   # FUNCTION_NAME: '${{ secrets.FUNCTION_NAME }}'
     #   # AWS_ACCESS_KEY_ID: '${{ secrets.AWS_ACCESS_KEY_ID }}'

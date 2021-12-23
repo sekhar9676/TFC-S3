@@ -6,7 +6,7 @@ on:
     paths:
       - '**.go'
   jobs:
-  #   publish:
+    publish:
   #   if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     # env:

@@ -1,5 +1,5 @@
-name: Test
-on:
+name: Build and Upload to S3
+'on':
   # pull_request:
   #   branches-ignore:
   #     - main
@@ -8,8 +8,8 @@ on:
   push:
     branches:
       - master
-    paths:
-      - '**.go'
+    # paths:
+    #   - '**.go'
 jobs:
   go-test:
     runs-on: ubuntu-latest

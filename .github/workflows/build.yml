@@ -51,4 +51,6 @@ jobs:
           go mod tidy
           go build -ldflags="-s -w" -a -installsuffix cgo -o main main.go
           zip main.zip main
+          pwd
+          ls
         working-directory: master

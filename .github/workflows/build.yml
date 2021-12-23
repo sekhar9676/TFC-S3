@@ -42,11 +42,11 @@ jobs:
           git commit -m "github action: go fmt"
           git push
         continue-on-error: true
-        working-directory: main
+        working-directory: master
 
       - name: Test Golang Code
         run: |
           GOOS=linux GOARCH=amd64 CGO_ENABLED=0
           go mod tidy
           go test -v ./...
-        working-directory: main
+        working-directory: master

@@ -3,10 +3,10 @@ name: test workflow
 on:
  workflow_dispatch:
    inputs:
-     language:
+     language: abc
       required: true
 jobs:
   runs-on: ubuntu-latest
-   steps:
+    steps:
   - run: | 
       echo "ENV: ${{ github.event.inputs.language }}"

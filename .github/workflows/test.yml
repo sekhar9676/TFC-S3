@@ -1,1 +1,13 @@
+name: test workflow
 
+on:
+ workflow_dispatch:
+   inputs:
+     language:
+      required: true
+jobs:
+  printInputs:
+   runs-on: ubuntu-latest
+   steps:
+  - run: | 
+      echo "ENV: ${{ github.event.inputs.language }}"

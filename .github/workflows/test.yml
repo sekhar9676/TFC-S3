@@ -6,7 +6,7 @@ on:
      language:
       required: true
 jobs:
-  printInputs:
+  printinputs:
    runs-on: ubuntu-latest
    steps:
   - run: | 

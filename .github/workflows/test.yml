@@ -6,7 +6,6 @@ on:
      language:
       required: true
 jobs:
-  print:
    runs-on: ubuntu-latest
    steps:
   - run: | 
